@@ -1,0 +1,11 @@
+# Auto-detect text files and normalize them
+* text=auto
+
+# Explicitly normalize common code files
+*.ts     text
+*.tsx    text
+*.js     text
+*.jsx    text
+*.json   text
+*.css    text
+*.html   text
