@@ -1,3 +1,5 @@
+import { Button } from "../components/ui/Button";
+
 const Profile: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center p-4">
@@ -23,11 +25,12 @@ const Profile: React.FC = () => {
           <p className="text-gray-700">Phone: (123) 456-7890</p>
           <p className="text-gray-700">Location: New York, USA</p>
         </div>
-        <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-          Edit Profile
-        </button>
+        {/* Edit Profile Button */}
+        <div className="absolute -bottom-16 right-8">
+          <Button variant="outline">Edit Profile</Button>
+        </div>
       </div>
-    </div>
+      </div>
   );
 };
 
