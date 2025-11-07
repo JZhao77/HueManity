@@ -1,30 +1,16 @@
-import React from "react";
-import { Hello } from "./components/Hello";
-import { Footer } from "./components/Footer";
-import { HomeButton } from "./components/HomeButton";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Profile from "./pages/Profile";
 
-function App() {
+export default function App() {
   return (
-    <div style={{ 
-      minHeight: "100vh",
-      display: "flex",
-      flexDirection: "column",
-      margin: 0,
-      padding: 0
-    }}>
-      <main style={{ 
-        textAlign: "center", 
-        marginTop: "50px",
-        flex: "1",
-        paddingBottom: "20px"
-      }}>
-        <HomeButton />
-        <h1>Welcome to My React App!</h1>
-        <Hello />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;
