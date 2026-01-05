@@ -40,6 +40,21 @@ export default function Home() {
         Learn More About Us 
       </Link>
       </p>
+
+      
+      {/* Removed mt-6 */}
+      <p className="text-md">
+      <Link to="/componentsdemo" className="inline-block px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+        Components Demo 
+      </Link>
+      </p>
+
+      {/* Removed mt-6 */}
+      <p className="text-md">
+      <Link to="/feed" className="inline-block px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+        Feed
+      </Link>
+      </p>
       
       {/* Removed mt-6 */}
       <p className="text-md">
