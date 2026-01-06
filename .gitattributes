@@ -1,15 +1,14 @@
 # Auto-detect text files and normalize them
 * text=auto
 
-# Explicitly normalize common code files
-*.ts     text
-*.tsx    text
-*.js     text
-*.jsx    text
-*.json   text
-*.css    text
-*.html   text
+# Normalize common code files (leave CRLF on Windows, LF in repo)
+*.ts
+*.tsx
+*.js
+*.jsx
+*.css
+*.html
 
 # Force certain file types to LF (good for scripts/JSON)
-*.sh text eol=lf
-*.json text eol=lf
+*.sh eol=lf
+*.json eol=lf
