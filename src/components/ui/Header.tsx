@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
+import logo from '../../assets/images/Hue_Transparent.png'; 
 
 export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b shadow-sm">
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center">
         {/* Left: Logo */}
-        <Link to="/" className="text-xl font-bold text-blue-600">
-          HueManity
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="HueManity logo" className="h-8 mr-2" />
         </Link>
 
         {/* Center: Navigation */}

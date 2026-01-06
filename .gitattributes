@@ -9,3 +9,7 @@
 *.json   text
 *.css    text
 *.html   text
+
+# Force certain file types to LF (good for scripts/JSON)
+*.sh text eol=lf
+*.json text eol=lf
